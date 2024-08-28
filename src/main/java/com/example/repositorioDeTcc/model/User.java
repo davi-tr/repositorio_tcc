@@ -51,6 +51,7 @@ public class User implements Serializable, UserDetails {
         if(this.role == Role.ADMIN) return List.of(new SimpleGrantedAuthority("ROLE_ADMIN"), new SimpleGrantedAuthority("ROLE_USER"));
         else return List.of(new SimpleGrantedAuthority("ROLE_USER"));
         //Teste
+        //Novo Teste
     }
 
     @Override
