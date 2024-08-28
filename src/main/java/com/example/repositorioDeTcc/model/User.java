@@ -52,6 +52,7 @@ public class User implements Serializable, UserDetails {
         else return List.of(new SimpleGrantedAuthority("ROLE_USER"));
         //Teste
         //Novo Teste
+        //Novo
     }
 
     @Override
