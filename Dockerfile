@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-17 AS builder
+FROM maven:3-eclipse-temurin-22-alpine AS builder
 
 
 WORKDIR /app
@@ -8,7 +8,7 @@ COPY src ./src
 
 RUN mvn package -DskipTests
 
-FROM openjdk:17-jdk-slim
+FROM openjdk:22-jdk-slim
 
 EXPOSE 8080
 WORKDIR /app
